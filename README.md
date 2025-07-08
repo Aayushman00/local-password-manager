@@ -78,14 +78,12 @@ python passman.py list
 
 ## 🗂 File Breakdown
 
-```bash
 | File             | Description                               |
 | ---------------- | ----------------------------------------- |
 | `passman.py`     | Main CLI script                           |
 | `passwords.json` | Stores encrypted passwords (auto-created) |
 | `secret.key`     | Symmetric encryption key (auto-generated) |
 | `master.hash`    | Stores master password hash (SHA-256)     |
-```
 
 ## 🔄 Reset Everything (Caution)
 
