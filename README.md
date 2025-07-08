@@ -20,3 +20,16 @@ A simple, secure local password manager built with Python. It stores encrypted p
 
 ```bash
 pip install cryptography pyperclip
+
+# Add a password for Twitter
+python passman.py add twitter
+
+# Retrieve (copied to clipboard)
+python passman.py get twitter
+
+# Delete
+python passman.py delete twitter
+
+# List all saved services
+python passman.py list
+
