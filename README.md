@@ -28,3 +28,62 @@ Install manually:
 
 ```bash
 pip install cryptography pyperclip
+```
+
+## 🔐 First Time Setup
+
+When you run the tool for the first time, you’ll be prompted to create a master password. This will be hashed (not stored in plaintext) and required for all future operations.
+
+## 🧾 Commands
+### ➕ Add or Update a Password
+
+```bash
+python passman.py add <service-name>
+```
+
+### 🔑 Get a Password
+```bash
+python passman.py get <service-name>
+```
+
+### 🗑 Delete a Password
+```bash
+python passman.py delete <service-name>
+```
+
+### 📋 List All Stored Services
+
+```bash
+python passman.py list
+```
+
+
+## Examples
+
+```bash
+# Add password for Gmail
+python passman.py add gmail
+
+# Retrieve it
+python passman.py get gmail
+
+# Delete it
+python passman.py delete gmail
+
+# List everything
+python passman.py list
+
+```
+
+
+## 🗂 File Breakdown
+
+```bash
+| File             | Description                               |
+| ---------------- | ----------------------------------------- |
+| `passman.py`     | Main CLI script                           |
+| `passwords.json` | Stores encrypted passwords (auto-created) |
+| `secret.key`     | Symmetric encryption key (auto-generated) |
+| `master.hash`    | Stores master password hash (SHA-256)     |
+```
+
