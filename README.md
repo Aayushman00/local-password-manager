@@ -87,3 +87,11 @@ python passman.py list
 | `master.hash`    | Stores master password hash (SHA-256)     |
 ```
 
+## 🔄 Reset Everything (Caution)
+
+To completely reset the manager (⚠️ all data will be lost):
+```bash
+del passwords.json
+del secret.key
+del master.hash
+```
