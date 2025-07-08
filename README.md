@@ -1,35 +1,30 @@
 # 🔐 CLI Password Manager
 
-A simple, secure local password manager built with Python. It stores encrypted passwords using Fernet, is protected by a master password, and supports clipboard copy for quick retrieval.
+A simple, secure local password manager built in Python. It stores encrypted passwords locally using Fernet (AES-based symmetric encryption), protects access with a master password, and copies passwords to your clipboard securely — nothing printed to the screen.
 
 ---
 
-## Features
+## 🚀 Features
 
-- 💾 Local storage (no cloud, no sync, no leaks)
-- 🔐 Master password protection (hashed, not stored)
-- 🔒 AES-128 encryption via Fernet (symmetric key)
-- 📋 Clipboard copy on retrieval
-- 📦 Add, retrieve, delete, and list passwords
+- 💾 Fully local storage (`passwords.json`)
+- 🔐 Master password protection (stored as SHA-256 hash)
+- 🔒 Encryption via Fernet (AES-128 under the hood)
+- 📋 Clipboard copy for password retrieval
+- 📦 Commands to add, get, delete, and list services
+- 🧪 Minimal dependencies, quick setup
 
 ---
 
-## Getting Started
+## 📦 Requirements
 
-### 1. Install Requirements
+- Python 3.7+
+- Libraries:
+  - `cryptography`
+  - `pyperclip`
+
+### 🔧 Install Dependencies
+
+Install manually:
 
 ```bash
 pip install cryptography pyperclip
-
-# Add a password for Twitter
-python passman.py add twitter
-
-# Retrieve (copied to clipboard)
-python passman.py get twitter
-
-# Delete
-python passman.py delete twitter
-
-# List all saved services
-python passman.py list
-
