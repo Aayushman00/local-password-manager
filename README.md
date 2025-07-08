@@ -1,50 +1,22 @@
-\# local-password-manager
+# 🔐 CLI Password Manager
 
-
-
-\# 🔐 CLI Password Manager
-
-
-
-A simple, secure local password manager built with Python. It stores encrypted passwords using Fernet (symmetric encryption), protected with a master password, and supports clipboard copy for quick access.
-
-
+A simple, secure local password manager built with Python. It stores encrypted passwords using Fernet, is protected by a master password, and supports clipboard copy for quick retrieval.
 
 ---
 
+## Features
 
-
-\## Features
-
-
-
-\- Secure password encryption using `cryptography` (Fernet)
-
-\- Master password protection (hashed, not stored in plain text)
-
-\- Add, retrieve, update, and delete passwords
-
-\- Copy password to clipboard instead of printing to terminal
-
-\- Local JSON-based storage (no external servers or dependencies)
-
-
+- 💾 Local storage (no cloud, no sync, no leaks)
+- 🔐 Master password protection (hashed, not stored)
+- 🔒 AES-128 encryption via Fernet (symmetric key)
+- 📋 Clipboard copy on retrieval
+- 📦 Add, retrieve, delete, and list passwords
 
 ---
 
+## Getting Started
 
-
-\## Setup
-
-
-
-\### 1. Clone the repository
+### 1. Install Requirements
 
 ```bash
-
-git clone https://github.com/your-username/password-manager.git
-
-cd password-manager
-
-
-
+pip install cryptography pyperclip
